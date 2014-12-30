@@ -1,0 +1,46 @@
+[user]
+  name = Bryan Li
+  email = bryan.li@avidlifemedia.com
+[core]
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore
+[web]
+  browser = google-chrome
+[push]
+  default = current
+[color "branch"]
+  current = yellow bold
+  local = green bold
+  remote = cyan bold
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+      old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = green bold
+  changed = yellow bold
+  untracked = red bold
+        [diff]
+  tool = vimdiff
+[alias]
+  a = add
+  aa = add --all
+  b = branch
+  c = commit
+  cm = commit -m
+  ca = commit --amend
+  co = checkout
+  d = diff
+  f = fetch
+  l = log --oneline
+  lg = log --oneline --graph --decorate
+  m = merge
+  ps = push
+  pl = pull
+  s = status
+  sb = status -s -b
+  #############
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
