@@ -8,7 +8,7 @@
 
 dir=~/mac_dotfiles                    # dotfiles directory
 olddir=~/mac_dotfiles.old             # old dotfiles backup directory
-files="gemrc gitconfig vimrc.before vimrc.after gvimrc.after"    # list of files/folders to symlink in homedir
+files="gitconfig gitignore vimrc.before vimrc.after gvimrc.after gemrc"    # list of files/folders to symlink in homedir
 
 ##########
 
