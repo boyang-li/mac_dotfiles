@@ -1,13 +1,5 @@
-set guifont=Inconsolata\ for\ Powerline:h14
-set encoding=utf-8
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
-
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+" Customized <Leader>
+let mapleader = ";"
 
 " This allows buffers to be hidden if you've modified a buffer.
 " " This is almost a must if you wish to use buffers in this way.
@@ -15,17 +7,29 @@ set hidden
 
 " " To open a new empty buffer
 " " This replaces :tabnew which I used to bind to this mapping
-nmap <leader>T :enew<cr>
+map ;T :enew<cr>
 
 " " Move to the next buffer
-nmap <leader>l :bnext<CR>
+map ;l :bnext<CR>
 
 " " Move to the previous buffer
-nmap <leader>h :bprevious<CR>
+map ;h :bprevious<CR>
 
 " " Close the current buffer and move to the previous one
 " " This replicates the idea of closing a tab
-nmap <leader>bq :bp <BAR> bd #<CR>
+map ;bq :bp <BAR> bd #<CR>
 
 " " Show all open buffers and their status
-nmap <leader>bl :ls<CR>
+map ;bl :ls<CR>
+
+set guifont=Inconsolata\ for\ Powerline:h14
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+" Powerline styles in VIM using the airline Janus plugin
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
